@@ -113,26 +113,9 @@ class EmployeesContainer extends Component {
     return dob.join("-");
   };
 
-  render() {
-    return (
-      <>
-        <SearchBar
-          value={this.state.search}
-          handleInputChange={this.handleInputChange}
-          handleFormSubmit={this.handleFormSubmit}
-        />
-        <div className="container mt-4">
-          <EmployeeTable
-            state={this.state}
-            sortBy={this.sortBy}
-            filterEmployees={this.filterEmployees}
-            formatDate={this.formatDate}
-          />
-        </div>
-      </>
-    );
+ 
   }
-}
+
 
 export default EmployeesContainer;
 
