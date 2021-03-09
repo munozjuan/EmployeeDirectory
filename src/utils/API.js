@@ -1,5 +1,1 @@
-export default {
-    getEmployees: function() {
-        return axios.get(URL);
-    }
-}
+import axios from "axios";
