@@ -103,7 +103,14 @@ class EmployeesContainer extends Component {
     }
   };
 
-  
+  formatDate = (date) => {
+    date = new Date(date);
+    let dob = [];
+    dob.push(("0" + (date.getMonth() + 1)).slice(-2));
+    dob.push(("0" + date.getDate()).slice(-2));
+    dob.push(date.getFullYear());
+
+    // date
     return dob.join("-");
   };
 
