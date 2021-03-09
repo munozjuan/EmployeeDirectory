@@ -11,3 +11,12 @@ class EmployeeContainer extends Component{
         sortDirections: this.initialSortDirections,
     }
 };
+
+get initialSortDirections() {
+    return {
+      name: "",
+      phone: "",
+      email: "",
+      dob: "",
+    };
+  }
