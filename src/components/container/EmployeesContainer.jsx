@@ -20,3 +20,14 @@ get initialSortDirections() {
       dob: "",
     };
   }
+
+  componentDidMount() {
+    API.getEmployees()
+      .then((res) =>
+        this.setState({
+          employees: res.data.results,
+          filteredEmployees: res.data.results,
+        })
+      )
+      .catch((err) => console.log(err));
+  }
