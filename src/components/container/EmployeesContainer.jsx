@@ -60,8 +60,7 @@ class EmployeesContainer extends Component {
         a = a[key];
         b = b[key];
 
-        // If secondary comparison given and primary comparison is equal
-        // Example: Sorting by last name, if last names are equal, then sort that instance by first name instead.
+        
         if (primary) {
           if (secondary && a[primary] === b[primary]) {
             return a[secondary].localeCompare(b[secondary]);
@@ -110,7 +109,7 @@ class EmployeesContainer extends Component {
     dob.push(("0" + date.getDate()).slice(-2));
     dob.push(date.getFullYear());
 
-    // Join formatted date
+    //  date
     return dob.join("-");
   };
 
