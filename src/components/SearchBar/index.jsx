@@ -2,7 +2,6 @@ import React from "react";
 import "./style.css";
 
 const SearchBar = (props) => {
-  // Setting the component's initial state
 
   return (
     <nav className="navbar navbar-light bg-light justify-content-center">
