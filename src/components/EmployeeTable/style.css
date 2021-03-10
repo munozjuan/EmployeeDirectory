@@ -7,7 +7,7 @@ tbody {
     display: block;
     overflow-y: auto;
     overflow-x: hidden;
-    max-height: 65vh;
+    max-height: 60vh;
 }
 
 thead,
